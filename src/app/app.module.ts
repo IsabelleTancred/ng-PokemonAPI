@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginPage } from './pages/login/login.page';
 import { PokemonCataloguePage } from './pages/pokemon-catalogue/pokemon-catalogue.page';
 import { TrainerPage } from './pages/trainer/trainer.page';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 //Decorator
 @NgModule({
@@ -13,7 +14,8 @@ import { TrainerPage } from './pages/trainer/trainer.page';
     AppComponent,
     LoginPage,
     PokemonCataloguePage,
-    TrainerPage
+    TrainerPage,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
