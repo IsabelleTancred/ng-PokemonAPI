@@ -10,9 +10,7 @@ import { LoginService } from "../../services/login.service";
 })
 export class LoginFormComponent {
 
-  public loading: boolean = false;
 
-  @Output() login: EventEmitter<void> = new EventEmitter();
 
   constructor(
 
@@ -20,19 +18,15 @@ export class LoginFormComponent {
   ) { }
 
   public loginSubmit(loginForm: NgForm): void {
-    this.loading = true;
+
     const { username } = loginForm.value;
 
     this.loginService.login(username).subscribe({
-      next: (user: User) => {
+      next: (user: User) => {},
 
-        this.loading = false;
-        this.login.emit();
-      },
       error: () => {
       },
-      complete: () => {
-      },
+
     });
   }
 }
