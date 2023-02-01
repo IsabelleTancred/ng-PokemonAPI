@@ -8,7 +8,7 @@ import { LandingPage } from './pages/landing/landing.page';
 import { TrainerPage } from './pages/trainer/trainer.page';
 import { AppRoutingModule } from './app-routing.modules';
 import { LoginFormComponent } from './components/login-form/login-form.component';
-
+import { FormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -17,12 +17,14 @@ import { LoginFormComponent } from './components/login-form/login-form.component
     PokemonCataloguePage,
     LandingPage,
     TrainerPage,
-    LoginFormComponent
+    LoginFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
