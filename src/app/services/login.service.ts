@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map, Observable, of, switchMap } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { User } from '../models/user.model';
+import { UserService } from "./user.service";
 
 const { API_USER, API_KEY } = environment;
 
@@ -11,7 +12,9 @@ const { API_USER, API_KEY } = environment;
 })
 export class LoginService {
   // Dependency Injection, we inject HttpClient dependency to login
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private readonly userService: UserService,) {}
 
   public login(username: string): Observable<User> {
     return this.checkUsername(username).pipe(
@@ -48,4 +51,9 @@ export class LoginService {
 
     return this.http.post<User>(API_USER, user, { headers });
   }
+
+  public logout(): void {
+    this.userService.user = undefined;
+  }
 }
+
