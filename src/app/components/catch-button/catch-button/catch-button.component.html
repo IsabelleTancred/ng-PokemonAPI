@@ -1,0 +1,18 @@
+<ng-container *ngIf="!loading; else loader">
+
+    <ng-container *ngIf="isCaught; then releasePokemon else catchPokemon" class=""></ng-container>
+  
+    <ng-template #releasePokemon>
+      <button type="button" class="catch-btn release-btn" (click)="onCatchClick()">Throw</button>
+    </ng-template>
+  
+    <ng-template #catchPokemon>
+      <button type="button" class="catch-btn" (click)="onCatchClick()">Catch</button>
+    </ng-template>
+  
+  </ng-container>
+  
+  <ng-template #loader>
+    <button type="button" class="catch-btn" disabled (click)="onCatchClick()">...</button>
+  </ng-template>
+  

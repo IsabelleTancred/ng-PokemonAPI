@@ -9,11 +9,7 @@
             <li class="px-4">
                 <a routerLink="/trainer">Trainer</a>
             </li>
-            <li class="px-2">
-                <button
-                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    LogOut</button>
-            </li>
+            <li><a *ngIf="user" (click)="handleLogout()" class="nav-link">Logout</a></li>
         </ul>
     </ng-container>
 
