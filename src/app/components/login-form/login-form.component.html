@@ -26,7 +26,13 @@
     </span>
   </div>
 
+  <!---------- Loader ---------->
+  <ng-container *ngIf="loading; then showLoader"></ng-container>
 
-
+  <ng-template #showLoader>
+    <div class="loader">
+      <span class="loader-text">Loading...</span>
+    </div>
+  </ng-template>
 
 </form>
