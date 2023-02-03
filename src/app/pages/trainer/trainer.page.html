@@ -1,23 +1,22 @@
 <main>
-    <div class="container">
-      <header class="container">
-        <h1>Welcome Trainer <span class="color-accent"> {{ user ? user.username : "-" }}</span></h1>
-      </header>
-      <ng-container *ngIf="pokemon.length > 0; then showPokemonCollection else showMissingMessage"></ng-container>
-  
-      <ng-template #showPokemonCollection>
-        <h4>Your pokEmon collection</h4>
-        <h4>You have catched  ,{{ pokemon.length }} pokémon </h4>
-        <app-pokemon-list [pokemons]="pokemon"></app-pokemon-list>
-      </ng-template>
-  
-      <ng-template #showMissingMessage>
-        <div class="header-info">
-          <h4>No cought pokemon yet... </h4>
-          <h4>Please catch one first!</h4>
-          <a routerLink="/pokemon-catalogue" class="catch-btn"> CATCH POKI</a>
-        </div>
-      </ng-template>
-    </div>
-  </main>
-  
+  <div class="container">
+    <header class="container">
+      <h1>Welcome Trainer <span class="color-accent"> {{ user ? user.username : "-" }}</span></h1>
+    </header>
+    <ng-container *ngIf="pokemon.length > 0; then showPokemonCollection else showMissingMessage"></ng-container>
+
+    <ng-template #showPokemonCollection>
+      <h4>Your pokemon collection</h4>
+      <h4>You have caught{{ pokemon.length }} pokémon </h4>
+      <app-pokemon-list [pokemons]="pokemon"></app-pokemon-list>
+    </ng-template>
+
+    <ng-template #showMissingMessage>
+      <div class="header-info">
+        <h4>No caught pokemon yet... </h4>
+        <h4>Please catch one first!</h4>
+        <a routerLink="/pokemon-catalogue" class="catch-btn"> CATCH POKEMON</a>
+      </div>
+    </ng-template>
+  </div>
+</main>

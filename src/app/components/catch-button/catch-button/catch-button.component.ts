@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HttpErrorResponse } from "@angular/common/http";
+import { CatchService } from 'src/app/services/catch.service';
+import { UserService } from 'src/app/services/user.service';
+import { User } from 'src/app/models/user.model';
 
-import { User } from "../../models/user.model";
-import { UserService } from "../../services/user.service";
-import { CatchService } from "../../services/catch.service";
+
 
 
 @Component({
