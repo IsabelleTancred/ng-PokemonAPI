@@ -2,23 +2,24 @@ form {
     width: min(90%, 600px);
     margin: 0 auto;
     padding: 3rem;
-    background-image: url("src\assets\pikatchu.png");
-    background-repeat: repeat-x;
-    background-position: top;
-    background-size: 80%;
+    background-image: url("src\assets\pikatchu1.png");
+    background-position: center;
+    background-size: 150%;
   }
 
   
 fieldset {
+    color: #580e02;
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
     margin-top: 11rem;
     padding: 1rem;
     background-color: #a9ffa1;
-
     background-image: linear-gradient(to bottom, #a1caeb, #e15ded);
     border-radius: 23px;
+    font-size: 1.5rem;
+    opacity: 0.9;
   }
 
   form input {
@@ -45,7 +46,7 @@ fieldset {
     background-image: linear-gradient(to bottom, #9bc4ee, #cd65cd);
     display: block;
     text-align: center;
-
+    opacity: 0.9;
     font-family: arial;
     font-size: 14px;
     line-height: 30px;
@@ -78,12 +79,14 @@ fieldset {
     flex-flow: column nowrap;
     border-radius: 23px;
     background-image: linear-gradient(to bottom, #2b0c09, #d5150a);
+    opacity: 0.7;
   }
   
   .validation-error {
     margin: 1rem 0;
-    color: #e0be24;
+    color: #e8e6de;
     padding: 1rem;
+        opacity: 0.9;
 
    
   }

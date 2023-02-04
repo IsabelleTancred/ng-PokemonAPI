@@ -5,7 +5,51 @@
     width: 100%;
     z-index: 999;
     padding: 1rem;
-
+    flex-flow: row;
     top: 0;
     background-image: linear-gradient(to bottom, #9eacf8, #f153ff);
   }
+
+  .container img {
+    width: 100px ;
+
+
+  }
+
+
+
+
+  .px-4 {
+
+    width: 80px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 1px 3px;
+    box-shadow: 1px 1px 1px #000000;
+    background-image: linear-gradient(to top, #f3e871, #eb4747);
+    display: block;
+    text-align: center;
+
+    font-family: arial;
+    font-size: 14px;
+    line-height: 30px;
+    display: grid;
+
+  }
+  .px-4:hover {
+    background-image: linear-gradient(to bottom, #a3a8c6, #a8c6fd);
+  }
+  .px-4:active {
+    margin-left: 1px 1px 0;
+    box-shadow: -1px -1px 1px #000;
+    outline: 1px solid #000000;
+    -moz-outline-radius: 7px;
+    background-image: linear-gradient(to top, #71dff3, #dd3be3);
+  }
+  #px-4Control:checked + label {
+    width: 70px;
+    height: 74px;
+    line-height: 74px;
+  }
+  

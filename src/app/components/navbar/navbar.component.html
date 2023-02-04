@@ -9,7 +9,10 @@
             <li class="px-4">
                 <a routerLink="/trainer">Trainer</a>
             </li>
-            <li><a *ngIf="user" (click)="handleLogout()" class="nav-link">Logout</a></li>
+            <li><a class="px-4" *ngIf="user" (click)="handleLogout()" class="px-4">Logout</a></li>
+            <div class="container">
+                <img src="assets\Pikachu_Logo.png" alt="pikachu">
+              </div>
         </ul>
     </ng-container>
 
