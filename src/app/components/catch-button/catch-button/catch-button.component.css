@@ -1,0 +1,36 @@
+.catch-btn {
+    width: 80px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 1px 3px;
+    box-shadow: 1px 1px 1px #000000;
+    background-image: linear-gradient(to bottom, #97e8ae, #3be36b);
+    display: block;
+    text-align: center;
+
+    font-family: arial;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .catch-btn:hover {
+    background-image: linear-gradient(to bottom, #a3a8c6, #a8c6fd);
+  }
+  .catch-btn:active {
+    margin-left: 1px 1px 0;
+    box-shadow: -1px -1px 1px #000;
+    outline: 1px solid #000000;
+    -moz-outline-radius: 7px;
+    background-image: linear-gradient(to top, #97e8ae, #3be36b);
+  }
+  #catch-btnControl:checked + label {
+    width: 70px;
+    height: 74px;
+    line-height: 74px;
+  }
+  
+  .throw-btn {
+    background-color: #969696;
+    border: 3px groove #2a2a2a;
+    color: black;
+  }
