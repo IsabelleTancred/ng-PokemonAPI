@@ -16,7 +16,7 @@ fieldset {
     margin-top: 11rem;
     padding: 1rem;
     background-color: #a9ffa1;
-    border: 1px groove black;
+
     background-image: linear-gradient(to bottom, #a1caeb, #e15ded);
     border-radius: 23px;
   }
@@ -24,7 +24,6 @@ fieldset {
   form input {
     width: 100%;
     padding: 1em;
-    border: 5px groove #b0f1ec;
     font-size: 1rem;
     border-radius: 23px;
   }
@@ -43,7 +42,7 @@ fieldset {
     border-radius: 7px;
     padding: 1px 3px;
     box-shadow: 1px 1px 1px #000000;
-    background-image: linear-gradient(to bottom, #97e8ae, #cd65cd);
+    background-image: linear-gradient(to bottom, #9bc4ee, #cd65cd);
     display: block;
     text-align: center;
 

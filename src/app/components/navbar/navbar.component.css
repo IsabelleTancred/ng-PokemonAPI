@@ -1,0 +1,11 @@
+.nav-header {
+    text-align: left;
+    background-color: #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 1rem;
+
+    top: 0;
+    background-image: linear-gradient(to bottom, #9eacf8, #f153ff);
+  }
