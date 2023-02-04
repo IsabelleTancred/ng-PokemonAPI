@@ -1,0 +1,90 @@
+form {
+    width: min(90%, 600px);
+    margin: 0 auto;
+    padding: 3rem;
+    background-image: url("src\assets\pikatchu.png");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: 80%;
+  }
+
+  
+fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    margin-top: 11rem;
+    padding: 1rem;
+    background-color: #a9ffa1;
+    border: 1px groove black;
+    background-image: linear-gradient(to bottom, #a1caeb, #e15ded);
+    border-radius: 23px;
+  }
+
+  form input {
+    width: 100%;
+    padding: 1em;
+    border: 5px groove #b0f1ec;
+    font-size: 1rem;
+    border-radius: 23px;
+  }
+  
+  form input:focus {
+    border: 5px groove dodgerblue;
+    outline: none;
+  }
+  
+
+
+  .inline-block {
+    width: 80px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 1px 3px;
+    box-shadow: 1px 1px 1px #000000;
+    background-image: linear-gradient(to bottom, #97e8ae, #cd65cd);
+    display: block;
+    text-align: center;
+
+    font-family: arial;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .inline-block:hover {
+    background-image: linear-gradient(to bottom, #a3a8c6, #a8c6fd);
+  }
+  .inline-block:active {
+    margin-left: 1px 1px 0;
+    box-shadow: -1px -1px 1px #000;
+    outline: 1px solid #000000;
+    -moz-outline-radius: 7px;
+    background-image: linear-gradient(to top, #97e8ae, #3be36b);
+  }
+  #inline-blockControl:checked + label {
+    width: 70px;
+    height: 74px;
+    line-height: 74px;
+  }
+
+  .loader {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .validation-errors {
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 23px;
+    background-image: linear-gradient(to bottom, #2b0c09, #d5150a);
+  }
+  
+  .validation-error {
+    margin: 1rem 0;
+    color: #e0be24;
+    padding: 1rem;
+
+   
+  }
