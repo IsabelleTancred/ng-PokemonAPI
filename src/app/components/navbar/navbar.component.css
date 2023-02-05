@@ -1,7 +1,6 @@
 .nav-header {
     text-align: left;
     background-color: #ccc;
-    position: fixed;
     width: 100%;
     z-index: 999;
     padding: 1rem;
@@ -11,9 +10,10 @@
   }
 
   .container img {
-    width: 100px ;
-
-
+    width: 150px ;
+    height: auto;
+    justify-content: right;
+    
   }
 
 
@@ -30,7 +30,7 @@
     background-image: linear-gradient(to top, #f3e871, #eb4747);
     display: block;
     text-align: center;
-
+    margin: 0.4rem;
     font-family: arial;
     font-size: 14px;
     line-height: 30px;

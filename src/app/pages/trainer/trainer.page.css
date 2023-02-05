@@ -1,0 +1,41 @@
+header {
+    margin-top: 2rem;
+  }
+  
+  .header-info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1, h4 {
+    padding: 1em;
+
+    text-align: center;
+    background-image: linear-gradient(to top, #ffffff, #55f55a);
+  }
+  
+  .color-accent {
+    color: red;
+  }
+  
+  .catch-btn {
+    padding: 1em;
+    border: 3px groove red;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    box-shadow: 4px 4px #999;
+    white-space: nowrap;
+  }
+  
+  .catch-btn:hover {
+    color: black;
+  }
+  
+  .catch-btn:active {
+    box-shadow: 3px 3px #666;
+    transform: translateY(1px);
+  }
+  
