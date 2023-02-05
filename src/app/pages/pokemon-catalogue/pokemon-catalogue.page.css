@@ -2,3 +2,10 @@
     background-image: linear-gradient(to top, #000000, #000000);
 
   }
+
+  h1 {
+    padding: 1em;
+    text-align: center;
+    background-image: linear-gradient(to top, #000000, #9cd128);
+
+  }

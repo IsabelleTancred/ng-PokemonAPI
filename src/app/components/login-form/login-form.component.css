@@ -13,7 +13,7 @@ fieldset {
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
-    margin-top: 11rem;
+    margin-top: 1rem;
     padding: 1rem;
     background-color: #a9ffa1;
     background-image: linear-gradient(to bottom, #a1caeb, #e15ded);
@@ -72,6 +72,7 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    background-image: linear-gradient(to top, #97e8ae, #3be36b);
   }
   .validation-errors {
     margin: 1rem 0;
@@ -89,4 +90,9 @@ fieldset {
         opacity: 0.9;
 
    
+  }
+
+  .container img {
+    width: 200px ;
+
   }

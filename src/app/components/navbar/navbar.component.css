@@ -12,10 +12,11 @@
   }
 
   .container img {
-    width: 150px ;
+    width: 200px ;
     height: auto;
     justify-content: right;
-    
+    margin: left 4rem;
+    padding: 1rem;
   }
 
 

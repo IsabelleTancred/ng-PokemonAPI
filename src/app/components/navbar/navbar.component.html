@@ -1,5 +1,8 @@
 <nav class="nav-header">
-    <span class=" font-bold"> POKEMONS </span>
+
+    <div class="container">
+        <img src="assets\Pikachu_Logo.png" alt="pikachu">
+      </div>
 
     <ng-container *ngIf="user !== undefined">
         <ul class="flex">
@@ -10,9 +13,7 @@
                 <a routerLink="/trainer">Trainer</a>
             </li>
             <li><a class="px-4" *ngIf="user" (click)="handleLogout()" class="px-4">Logout</a></li>
-            <div class="container">
-                <img src="assets\Pikachu_Logo.png" alt="pikachu">
-              </div>
+
         </ul>
     </ng-container>
 
