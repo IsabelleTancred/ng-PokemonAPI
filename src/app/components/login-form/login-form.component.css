@@ -2,7 +2,7 @@ form {
     width: min(90%, 600px);
     margin: 0 auto;
     padding: 3rem;
-    background-image: url("src\assets\pikatchu1.png");
+    /* background-image: url("src\assets\pikatchu1.png"); */
     background-position: center;
     background-size: 150%;
   }

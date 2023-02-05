@@ -1,5 +1,5 @@
 header {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
   
   .header-info {
@@ -11,13 +11,14 @@ header {
   
   h1, h4 {
     padding: 1em;
-
+    color: rgb(243, 234, 234);
     text-align: center;
-    background-image: linear-gradient(to top, #ffffff, #55f55a);
+    background-image: linear-gradient(to top, #9a0000, #000000);
   }
   
   .color-accent {
-    color: red;
+    color: rgb(243, 220, 15);
+    font-size: large;
   }
   
   .catch-btn {
@@ -39,3 +40,7 @@ header {
     transform: translateY(1px);
   }
   
+  .container{
+    background-image: linear-gradient(to top, #000000, #000000);
+
+  }
