@@ -3,11 +3,11 @@
   <ng-container *ngIf="isCaught; then releasePokemon else catchPokemon" class=""></ng-container>
 
   <ng-template #releasePokemon>
-    <button type="button" class="btn is-caught" (click)="onCatchClick()">THROW</button>
+    <button type="button" class="btn is-caught flex text-center " (click)="onCatchClick()"> THROW</button>
   </ng-template>
 
   <ng-template #catchPokemon>
-    <button type="button" class="btn text-center tex" (click)="onCatchClick()">CATCH</button>
+    <button type="button" class="btn text-center font-bold" (click)="onCatchClick()">CATCH</button>
   </ng-template>
 
 </ng-container>

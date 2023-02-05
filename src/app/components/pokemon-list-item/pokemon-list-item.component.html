@@ -1,11 +1,11 @@
-<li *ngIf="pokemon">
-  <div class=" rounded-3xl costume-bg overflow-hidden shadow-2xl border-4 border-yellow-400 ">
-    <img class="w-full" [src]="pokemon.image" [alt]="pokemon.id">
+<li class="p-3" *ngIf="pokemon">
+  <div class="rounded-3xl max-w-[300px] costume-bg overflow-hidden shadow-2xl border-2 border-yellow-400 text-center">
+    <img class="w-full " [src]="pokemon.image" [alt]="pokemon.id">
     <div>
-      <div class="font-semibold text-center mb-2">{{ pokemon.name }}</div>
+      <div class="font-black text-2xl  text-center mb-2">{{ pokemon.name }}</div>
     </div>
     <div class="flex p-2 justify-center">
-      <app-catch-button [pokemonId]="pokemon.id"></app-catch-button>
+      <app-catch-button class="text-center" [pokemonId]="pokemon.id"></app-catch-button>
     </div>
   </div>
 </li>
