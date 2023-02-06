@@ -1,14 +1,15 @@
 <main>
   <div class="container">
     <header class="container">
-      <h1 class="text-center text-4xl">Welcome Trainer <span class="color-accent"> {{ user ? user.username : "-"
+      <h1 class="text-center text-4xl font-bold">Welcome Trainer <span class="color-accent"> {{ user ? user.username :
+          "-"
           }}</span></h1>
-      <h4 class="text-center text-3xl">This is your pokemon collection</h4>
+      <h4 class="text-center font-bold text-2xl">This is your pokemon collection</h4>
     </header>
     <ng-container *ngIf="pokemon.length > 0; then showPokemonCollection else showMissingMessage"></ng-container>
 
     <ng-template #showPokemonCollection>
-      <h4 class="text-center text-3xl">You have caught {{ pokemon.length }} pokémon </h4>
+      <h4 class="text-center font-bold text-2xl">You have caught {{ pokemon.length }} pokémon </h4>
       <app-pokemon-list [pokemons]="pokemon"></app-pokemon-list>
     </ng-template>
 
