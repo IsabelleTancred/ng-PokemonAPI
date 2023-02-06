@@ -16,7 +16,7 @@ header {
     background-image: linear-gradient(to top, #ee643a, #f3cf05);
   }
   
-  .color-accent {
+  .text-center1 {
     color: rgb(243, 42, 15);
     font-size: large;
   }
@@ -41,6 +41,6 @@ header {
   }
   
   .container{
-    background-image: linear-gradient(to top, #000000, #000000);
+    /* background-image: linear-gradient(to top, #000000, #000000); */
 
   }
