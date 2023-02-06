@@ -1,9 +1,9 @@
 <main>
   <div class="container">
     <header class="container">
-      <h1 class="text-center text-4xl font-bold">Welcome Trainer <span> {{ user ? user.username :
-          "-"
-          }}</span></h1>
+      <h1 class="text-center text-4xl font-bold">Welcome Trainer <span class="color-user" >{{ user ? user.username :
+        "-"
+        }}</span></h1>
       <h4 class="text-center font-bold text-2xl">This is your pokemon collection</h4>
     </header>
     <ng-container *ngIf="pokemon.length > 0; then showPokemonCollection else showMissingMessage"></ng-container>

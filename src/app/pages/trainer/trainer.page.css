@@ -16,9 +16,9 @@ header {
     background-image: linear-gradient(to top, #ee643a, #f3cf05);
   }
   
-  .text-center1 {
+  .color-user {
     color: rgb(243, 42, 15);
-    font-size: large;
+    font-size: xx-large;
   }
   
   .catch-btn {
