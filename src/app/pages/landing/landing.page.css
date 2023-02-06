@@ -1,3 +1,42 @@
-
-
+.catch-btn {
+    display: flex;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(
+      to bottom,
+      rgb(255, 0, 0) 0%,
+      rgb(255, 255, 255) 100%
+    );
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
   
+  .catch-btn::before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: black;
+    opacity: 0;
+    content: "";
+    animation: pulse 1s infinite;
+    text-align: center;
+  }
+  
+  .catch-btn:hover::before {
+    animation: none;
+    opacity: 0.4;
+    transform: scale(1.3);
+    text-align: center;
+  }
+  .catch-btn.is-clicked {
+    background: linear-gradient(to bottom, gray 0%, dimgray 100%);
+  }
+
