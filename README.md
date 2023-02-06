@@ -11,7 +11,7 @@ First clone the project and then:
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-The project can also be found [here](https://ng-pokemon-api.vercel.app/)
+The project can also be found [here](https://ng-pokemon-api.vercel.app/) !
 
 ## Credits 
 This project was developed by Hassan Kashto and Isabelle Ermeryd Tancred.
