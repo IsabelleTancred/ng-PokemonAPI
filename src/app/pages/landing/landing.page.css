@@ -14,6 +14,7 @@
     text-align: center;
     text-decoration: none;
     color: white;
+    font-size: large;
   }
   
   .catch-btn::before {
@@ -38,5 +39,10 @@
   }
   .catch-btn.is-clicked {
     background: linear-gradient(to bottom, gray 0%, dimgray 100%);
+  }
+
+  .flex{
+    color: brown;
+    font-size: x-large;
   }
 
