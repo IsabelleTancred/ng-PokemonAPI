@@ -17,3 +17,36 @@
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#777777",endColorstr="#000000",GradientType=1);
 }
+
+.costume-bg:hover {
+  background: rgb(251, 173, 63);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(190, 203, 255, 0.3) 0%,
+    rgba(79, 70, 252, 0.7) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(190, 203, 255, 0.3) 0%,
+    rgba(79, 70, 252, 0.7) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(190, 203, 255, 0.3) 0%,
+    rgba(79, 70, 252, 0.7) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbad3f",endColorstr="#fc4646",GradientType=1);
+
+  border-color: rgba(79, 70, 252, 0.7);
+}
+
+img {
+  transition: 0.2s;
+  width: 170px;
+  height: 170px;
+}
+
+.costume-bg:hover img {
+  flex: auto;
+  transform: scale(1.3);
+}
