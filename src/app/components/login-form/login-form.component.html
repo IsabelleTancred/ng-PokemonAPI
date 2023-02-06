@@ -4,30 +4,28 @@
   <div class="container">
     <img src="assets\pikatchu.png" alt="pikach">
   </div>
-    <fieldset class="mb-3">
-        <label for="username" class="block ">Username</label>
-        <input type="text" ngModel #username="ngModel" name="username" id="username"
-            class="border border-slate-300 p-2 rounded w-full" placeholder="Please enter your name here"
-            required
-            minlength="4"
-            pattern="[a-zA-Z]*">
-            
-    </fieldset>
+  <fieldset class="mb-3">
+    <label for="username" class="block ">Username</label>
+    <input type="text" ngModel #username="ngModel" name="username" id="username"
+      class="border border-slate-300 p-2 rounded w-full" placeholder="Please enter your name here" required
+      minlength="3" pattern="[a-zA-Z]*">
 
-    <button type="submit"
-        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-        Login</button>
+  </fieldset>
 
-        <!------ Validation ----->
-<div *ngIf="username.errors && (username.dirty || username.touched)" class="validation-errors">
+  <button [disabled]="username.errors" type="submit"
+    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+    Login</button>
+
+  <!------ Validation ----->
+  <div *ngIf="username.errors && (username.dirty || username.touched)" class="validation-errors">
     <span *ngIf="username.errors['required']" class="validation-error">
       <span class="errors"></span> You need to enter a name.
     </span>
     <span *ngIf="username.errors['minlength']" class="validation-error">
-      <span class="errors"></span> Username is too short, type at least 4 letters.
+      <span class="errors"></span> Username is too short, type at least 3 letters.
     </span>
     <span *ngIf="username.errors['pattern']" class="validation-error">
-      <span class="errors"></span> Please  only English letters
+      <span class="errors"></span> Please only English letters
     </span>
   </div>
 
