@@ -1,15 +1,16 @@
-<nav class="bg-blue-300 flex justify-between items-center p-4 sticky top-0 w-full">
-    <span class=" font-bold"> POKEMONS </span>
+<nav class="nb flex justify-between items-center p-10 sticky top-0 w-full z-10">
+    <a class="font-bold text-6xl hover:text-7xl" routerLink="/landing">POKEMON</a>
 
     <ng-container *ngIf="user !== undefined">
         <ul class="flex">
             <li class="px-4">
-                <a routerLink="/pokemon-catalogue">Pokemons</a>
+                <a class="text-2xl hover:font-black hover:text-3xl " routerLink="/pokemon-catalogue">Pokemons</a>
             </li>
             <li class="px-4">
-                <a routerLink="/trainer">Trainer</a>
+                <a class="text-2xl hover:font-black hover:text-3xl" routerLink="/trainer">Trainer</a>
             </li>
-            <li><a *ngIf="user" (click)="handleLogout()" class="nav-link">Logout</a></li>
+            <li><a ngClass="logout-button text-2xl" *ngIf="user" (click)="handleLogout()" class="nav-link">Logout</a>
+            </li>
         </ul>
     </ng-container>
 

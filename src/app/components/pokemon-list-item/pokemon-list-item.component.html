@@ -1,20 +1,11 @@
-<li *ngIf="pokemon">
-  <!-- <section> -->
-  <!-- <img [src]="pokemon.image" [alt]="pokemon.id"> -->
-  <!-- </section> -->
-  <!-- <span class="text-2xl">{{ pokemon.name }} </span> -->
-  <!-- <section class="block"> -->
-  <!-- <button class="p-1 font-semibold rounded-md bg-red-600 text-white">Catch</button> -->
-  <!-- </section> -->
-
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <img [src]="pokemon.image" [alt]="pokemon.id">
-    <!-- <img class="w-full" [src]="pokemon.image" [alt]="pokemon.name"/> -->
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{{ pokemon.name }}</div>
+<li class="p-3" *ngIf="pokemon">
+  <div class="rounded-3xl max-w-[300px] costume-bg overflow-hidden shadow-2xl border-2 border-yellow-400 text-center">
+    <img class="w-full " [src]="pokemon.image" [alt]="pokemon.id">
+    <div>
+      <div class="font-black text-2xl  text-center mb-2">{{ pokemon.name }}</div>
     </div>
-    <div class="px-6 pt-4 pb-2">
-      <app-catch-button [pokemonId]="pokemon.id"></app-catch-button>
+    <div class="flex p-2 justify-center">
+      <app-catch-button class="text-center" [pokemonId]="pokemon.id"></app-catch-button>
     </div>
   </div>
 </li>
